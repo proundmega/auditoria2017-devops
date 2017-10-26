@@ -1,0 +1,20 @@
+node {
+    
+    stage('Clone') {
+        git url: 'http://mi.repositorio.git'
+    }
+    
+    stage('Test') {
+        sh 'mvn clean test'
+    }
+
+    stage('SonarQube') {
+        withSonarQubeEnv('SonarServer') {
+            sh 'mvn clean sonar:sonar'
+        }
+    }
+    
+    stage('Build') {
+        sh 'mvn clean install'
+    }
+}
