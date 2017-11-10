@@ -21,10 +21,11 @@ ejecutando desde una consola:
 *** Uso ***
 
 Para iniciar todos los servicios que necesitará en el transcurso
-de este tutorial, ejecute el archivo init.sh que está en el
-directorio raiz de este repo desde una consola, asi:
+de este tutorial, ejecute el archivo deploy.sh que está en el
+directorio raiz de este repo desde una consola, como ROOT, asi:
 
 	bash deploy.sh
+
 
 Y siga las instrucciones contenidas en este archivo...
 

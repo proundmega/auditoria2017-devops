@@ -3,22 +3,20 @@ version: '2'
 services:
   jenkins:
     image: proundmega/auditoria2017-jenkins
+    build: ./docker/jenkins
     ports:
       - 8000:8080
     links:
-      - gitlab
       - sonarqube
     hostname: jenkins
-
-  gitlab:
-    image: proundmega/auditoria2017-gitlab
-    ports:
-      - "80:80"
-      - "10022:22"
-    hostname: gitlab
+    volumes:
+      - ./config/jenkins:/var/jenkins_home:Z
+      - /var/run/docker.sock:/var/run/docker.sock
 
   sonarqube:
     image: sonarqube:6.4
     ports:
       - 9000:9000
     hostname: sonarqube
+
+  

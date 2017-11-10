@@ -1,0 +1,35 @@
+node {
+    
+    stage('Clone') {
+        git (
+            url: "http://gitlab/auditoria2017/finanzas.git",
+            credentialsId: 'gitlab1',
+            branch: 'master'
+        )
+    }
+    
+    stage('Unit test') {
+        sh 'mvn clean test -Dgroups=org.proundmega.pruebas.UnitTest'
+        junit '**/target/surefire-reports/*.xml'
+    }
+    
+    stage('Integration test') {
+        sh 'mvn clean test -Dgroups=org.proundmega.pruebas.IntegrationTest'
+        junit '**/target/surefire-reports/*.xml'
+    }
+    
+    stage('Test all') {
+        sh 'mvn clean test'
+    }
+
+    stage('SonarQube') {
+        withSonarQubeEnv('SonarServer') {
+            sh 'mvn clean sonar:sonar'
+        }
+    }
+    
+    stage('Release') {
+        sh 'mvn clean install'
+        archive 'target/*.war'
+    }
+}

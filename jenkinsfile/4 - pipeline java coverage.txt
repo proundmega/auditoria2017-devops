@@ -1,0 +1,38 @@
+node {
+    
+    stage('Clone') {
+        git url: "https://github.com/proundmega/finanzas.git"
+    }
+    
+    stage('Unit test') {
+        sh 'mvn clean test -Dgroups=org.proundmega.pruebas.UnitTest'
+        junit '**/target/surefire-reports/*.xml'
+    }
+    
+    stage('Integration test') {
+        sh 'mvn clean test -Dgroups=org.proundmega.pruebas.IntegrationTest'
+        junit '**/target/surefire-reports/*.xml'
+    }
+    
+    stage('Test all') {
+        sh 'mvn clean test'
+    }
+
+    stage('SonarQube') {
+        withSonarQubeEnv('SonarServer') {
+            sh 'mvn package'
+            sh 'mvn sonar:sonar'
+        }
+    }
+    
+    stage('Release') {
+        sh 'mvn clean install'
+        archive 'target/*.war'
+    }
+    stage('Deploy') {
+        sh 'cp target/*.war docker/javaee/finanzas.war'
+        dir('docker') {
+            sh 'bash deploy.sh'
+        }
+    }
+}
