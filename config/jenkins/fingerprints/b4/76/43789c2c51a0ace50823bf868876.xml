@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-10-29 19:59:39.713 UTC</timestamp>
+  <md5sum>b47643789c2c51a0ace50823bf868876</md5sum>
+  <fileName>Credential id=gitlab1 name=auditoria2017/****** (Id de acceso a gitlab)</fileName>
+  <usages>
+    <entry>
+      <string>finanzas</string>
+      <ranges>1-2,4-10</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
