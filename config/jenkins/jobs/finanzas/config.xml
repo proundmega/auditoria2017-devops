@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.15">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.0">
+      <gitLabConnection>Gitlab interno</gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <com.dabsquared.gitlabjenkins.GitLabPushTrigger plugin="gitlab-plugin@1.5.0">
+          <spec></spec>
+          <triggerOnPush>true</triggerOnPush>
+          <triggerOnMergeRequest>true</triggerOnMergeRequest>
+          <triggerOnPipelineEvent>false</triggerOnPipelineEvent>
+          <triggerOnAcceptedMergeRequest>false</triggerOnAcceptedMergeRequest>
+          <triggerOnClosedMergeRequest>false</triggerOnClosedMergeRequest>
+          <triggerOpenMergeRequestOnPush>never</triggerOpenMergeRequestOnPush>
+          <triggerOnNoteRequest>true</triggerOnNoteRequest>
+          <noteRegex>Jenkins please retry a build</noteRegex>
+          <ciSkip>true</ciSkip>
+          <skipWorkInProgressMergeRequest>true</skipWorkInProgressMergeRequest>
+          <setBuildDescription>true</setBuildDescription>
+          <branchFilterType>All</branchFilterType>
+          <includeBranchesSpec></includeBranchesSpec>
+          <excludeBranchesSpec></excludeBranchesSpec>
+          <targetBranchRegex></targetBranchRegex>
+          <secretToken>{AQAAABAAAAAQF4D/+9tJ1LJq7pRIw+J4oBVHjAIl7gi0ikMehm74DF0=}</secretToken>
+        </com.dabsquared.gitlabjenkins.GitLabPushTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.41">
+    <script>node {
+    
+    stage(&apos;Clone&apos;) {
+        git (
+            url: &quot;http://gitlab/auditoria2017/finanzas.git&quot;,
+            credentialsId: &apos;gitlab1&apos;,
+            branch: &apos;master&apos;
+        )
+    }
+    
+    stage(&apos;Unit test&apos;) {
+        sh &apos;mvn clean test -Dgroups=org.proundmega.pruebas.UnitTest&apos;
+        junit &apos;**/target/surefire-reports/*.xml&apos;
+    }
+    
+    stage(&apos;Integration test&apos;) {
+        sh &apos;mvn clean test -Dgroups=org.proundmega.pruebas.IntegrationTest&apos;
+        junit &apos;**/target/surefire-reports/*.xml&apos;
+    }
+    
+    stage(&apos;Test all&apos;) {
+        sh &apos;mvn clean test&apos;
+    }
+
+    stage(&apos;SonarQube&apos;) {
+        withSonarQubeEnv(&apos;SonarServer&apos;) {
+            sh &apos;mvn sonar:sonar&apos;
+        }
+    }
+    
+    stage(&apos;Release&apos;) {
+        sh &apos;mvn clean install&apos;
+        archive &apos;target/*.war&apos;
+    }
+    stage(&apos;Deploy&apos;) {
+        sh &apos;cp target/*.war docker/javaee/finanzas.war&apos;
+        dir(&apos;docker&apos;) {
+            sh &apos;bash deploy.sh&apos;
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

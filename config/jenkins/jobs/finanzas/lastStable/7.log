@@ -1,0 +1,16 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/proundmega/finanzas.git # timeout=10
+Fetching upstream changes from https://github.com/proundmega/finanzas.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/proundmega/finanzas.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7531e5d0fac7dc209f15fdc78e2519e247a059d4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7531e5d0fac7dc209f15fdc78e2519e247a059d4
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 7531e5d0fac7dc209f15fdc78e2519e247a059d4
+Commit message: "Soporte de build de docker añadido"
+ > git rev-list 7531e5d0fac7dc209f15fdc78e2519e247a059d4 # timeout=10

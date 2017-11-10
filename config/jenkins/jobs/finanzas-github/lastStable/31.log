@@ -1,0 +1,60 @@
+[finanzas-github] Running shell script
++ mvn package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ Finanzas ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ Finanzas ---
+[INFO] argLine set to -javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/var/jenkins_home/workspace/finanzas-github/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Finanzas ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/finanzas-github/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Finanzas ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Finanzas ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.proundmega.finanzas.unit.core.AhorroTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec - in org.proundmega.finanzas.unit.core.AhorroTest
+Running org.proundmega.finanzas.it.core.ClienteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.proundmega.finanzas.it.core.ClienteTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (default-report) @ Finanzas ---
+[INFO] Loading execution data file /var/jenkins_home/workspace/finanzas-github/target/jacoco.exec
+[INFO] Analyzed bundle 'Finanzas' with 3 classes
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ Finanzas ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [Finanzas] in [/var/jenkins_home/workspace/finanzas-github/target/Finanzas-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/finanzas-github/src/main/webapp]
+[INFO] Webapp assembled in [309 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/finanzas-github/target/Finanzas-1.0.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.621 s
+[INFO] Finished at: 2017-11-07T14:14:12+00:00
+[INFO] Final Memory: 20M/171M
+[INFO] ------------------------------------------------------------------------

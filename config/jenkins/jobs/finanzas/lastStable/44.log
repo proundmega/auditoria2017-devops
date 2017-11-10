@@ -1,0 +1,2 @@
+[finanzas] Running shell script
++ cp target/Finanzas-1.0.war docker/javaee/finanzas.war

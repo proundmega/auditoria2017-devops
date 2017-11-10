@@ -1,0 +1,95 @@
+[finanzas-github] Running shell script
++ mvn sonar:sonar
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.3.0.603:sonar (default-cli) @ Finanzas ---
+[INFO] User cache: /var/jenkins_home/.sonar/cache
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=9197ms
+[INFO] User cache: /var/jenkins_home/.sonar/cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=66ms
+[INFO] SonarQube version: 6.4.0
+[INFO] Default locale: "en", source code encoding: "UTF-8"
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=654ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=297ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=6628ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=428ms
+[INFO] Publish mode
+[INFO] Project key: org.proundmega:Finanzas
+[INFO] -------------  Scan Finanzas
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=526ms
+[INFO] Initializer GenericCoverageSensor
+[INFO] Initializer GenericCoverageSensor (done) | time=0ms
+[INFO] Base dir: /var/jenkins_home/workspace/finanzas-github
+[INFO] Working dir: /var/jenkins_home/workspace/finanzas-github/target/sonar
+[INFO] Source paths: src/main/webapp, pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: en
+[INFO] Index files
+[INFO] 11 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=556ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=4ms
+[INFO] Java Main Files AST scan
+[INFO] 3 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=5551ms
+[INFO] Java Test Files AST scan
+[INFO] 4 source files to be analyzed
+[INFO] 3/3 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=568ms
+[INFO] 4/4 source files have been analyzed
+[INFO] Sensor JavaSquidSensor [java] (done) | time=10157ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing /var/jenkins_home/workspace/finanzas-github/target/surefire-reports
+[INFO] Sensor SurefireSensor [java] (done) | time=1118ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Analysing /var/jenkins_home/workspace/finanzas-github/target/jacoco.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoSensor [java] (done) | time=628ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 3 source files to be analyzed
+[INFO] 3/3 source files have been analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=4392ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] Sensor XML Sensor [xml] (done) | time=1093ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=259ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=230ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=197ms
+[INFO] SCM provider for this project is: git
+[INFO] 1 files to be analyzed
+[INFO] 1/1 files analyzed
+[INFO] Calculating CPD for 3 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 1185ms, dir size=54 KB
+[INFO] Analysis reports compressed in 263ms, zip size=27 KB
+[INFO] Analysis report uploaded in 855ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://sonarqube:9000/dashboard/index/org.proundmega:Finanzas
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://sonarqube:9000/api/ce/task?id=AV-W1eU4Wv0PKWJlB3CF
+[INFO] Task total time: 44.227 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:04 min
+[INFO] Finished at: 2017-11-07T14:15:22+00:00
+[INFO] Final Memory: 30M/309M
+[INFO] ------------------------------------------------------------------------

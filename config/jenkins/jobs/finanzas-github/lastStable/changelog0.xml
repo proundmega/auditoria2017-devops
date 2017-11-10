@@ -1,0 +1,12 @@
+commit dd4913177ad788a5ecfb7ba40733c110aee9f0f4
+tree e9a0f8839e0f7413a05ca3dc740a085be87c2dcd
+parent 24bad4d0654d9a6fa600628335ab4bede423a695
+author vansi olivares <proundmega@hotmail.com> 2017-11-07 08:12:04 -0600
+committer vansi olivares <proundmega@hotmail.com> 2017-11-07 08:12:04 -0600
+
+    Coverage 1.1
+
+
+
+:100644 100644 a82cc8bd1f7aa4bc2f979d99e78991c80fca610d ac151637bce23ca988fa261c540e5cddb07582bf M	pom.xml
+:100644 100644 7e600af2df88d84b9ed3a44960522e2ae4bd2b4a 3d245f6a093794313ff8dd30abf617f19426ac3a M	target/Finanzas-1.0/index.xhtml

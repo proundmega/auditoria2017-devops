@@ -1,0 +1,69 @@
+[finanzas-github] Running shell script
++ mvn clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Finanzas ---
+[INFO] Deleting /var/jenkins_home/workspace/finanzas-github/target
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ Finanzas ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ Finanzas ---
+[INFO] argLine set to -javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/var/jenkins_home/workspace/finanzas-github/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /var/jenkins_home/workspace/finanzas-github/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/finanzas-github/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/workspace/finanzas-github/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Finanzas ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.proundmega.finanzas.unit.core.AhorroTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.314 sec - in org.proundmega.finanzas.unit.core.AhorroTest
+Running org.proundmega.finanzas.it.core.ClienteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.proundmega.finanzas.it.core.ClienteTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:report (default-report) @ Finanzas ---
+[INFO] Loading execution data file /var/jenkins_home/workspace/finanzas-github/target/jacoco.exec
+[INFO] Analyzed bundle 'Finanzas' with 3 classes
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ Finanzas ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [Finanzas] in [/var/jenkins_home/workspace/finanzas-github/target/Finanzas-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/finanzas-github/src/main/webapp]
+[INFO] Webapp assembled in [648 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/finanzas-github/target/Finanzas-1.0.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ Finanzas ---
+[INFO] Installing /var/jenkins_home/workspace/finanzas-github/target/Finanzas-1.0.war to /var/jenkins_home/.m2/repository/org/proundmega/Finanzas/1.0/Finanzas-1.0.war
+[INFO] Installing /var/jenkins_home/workspace/finanzas-github/pom.xml to /var/jenkins_home/.m2/repository/org/proundmega/Finanzas/1.0/Finanzas-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 50.658 s
+[INFO] Finished at: 2017-11-07T14:16:25+00:00
+[INFO] Final Memory: 27M/257M
+[INFO] ------------------------------------------------------------------------

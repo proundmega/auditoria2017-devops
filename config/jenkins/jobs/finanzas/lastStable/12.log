@@ -1,0 +1,48 @@
+[finanzas] Running shell script
++ mvn clean test -Dgroups=org.proundmega.pruebas.UnitTest
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Finanzas ---
+[INFO] Deleting /var/jenkins_home/workspace/finanzas/target
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ Finanzas ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /var/jenkins_home/workspace/finanzas/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/finanzas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/workspace/finanzas/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Finanzas ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.proundmega.finanzas.unit.core.AhorroTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.proundmega.finanzas.unit.core.AhorroTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 26.771 s
+[INFO] Finished at: 2017-11-06T21:44:50+00:00
+[INFO] Final Memory: 21M/210M
+[INFO] ------------------------------------------------------------------------

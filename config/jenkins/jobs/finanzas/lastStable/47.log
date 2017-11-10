@@ -1,0 +1,13 @@
+[docker] Running shell script
++ bash deploy.sh
+Removing docker_javaee_1 ... 
+[1A[2KRemoving docker_javaee_1 ... done[1BRemoving network docker_default
+Building javaee
+Step 1/2 : FROM payara/server-full:latest
+ ---> 002f3499ba0c
+Step 2/2 : COPY finanzas.war $DEPLOY_DIR/finanzas.war
+ ---> 7e85f5893e51
+Successfully built 7e85f5893e51
+Successfully tagged docker_javaee:latest
+Creating network "docker_default" with the default driver
+Creating docker_javaee_1

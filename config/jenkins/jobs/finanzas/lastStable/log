@@ -1,0 +1,395 @@
+Started by user [8mha:////4Cwe5JLHa+IfFCaszFOECjTneSyoBmJDMKfu3nWbtG6FAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/dLi1CL9xNKUzJL8osxEIwNDcwDuYcoMyAAAAA==[0mauditoria
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4HvbIuMPGVLSYp0Sj3gIgj/1rz0AjbhyMY9i4O3gdP+EAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/workspace/finanzas
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Clone)
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/proundmega/finanzas.git # timeout=10
+Fetching upstream changes from https://github.com/proundmega/finanzas.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/proundmega/finanzas.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7531e5d0fac7dc209f15fdc78e2519e247a059d4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7531e5d0fac7dc209f15fdc78e2519e247a059d4
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 7531e5d0fac7dc209f15fdc78e2519e247a059d4
+Commit message: "Soporte de build de docker añadido"
+ > git rev-list 7531e5d0fac7dc209f15fdc78e2519e247a059d4 # timeout=10
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Unit test)
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[finanzas] Running shell script
++ mvn clean test -Dgroups=org.proundmega.pruebas.UnitTest
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Finanzas ---
+[INFO] Deleting /var/jenkins_home/workspace/finanzas/target
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ Finanzas ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /var/jenkins_home/workspace/finanzas/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/finanzas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/workspace/finanzas/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Finanzas ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.proundmega.finanzas.unit.core.AhorroTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.proundmega.finanzas.unit.core.AhorroTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 26.771 s
+[INFO] Finished at: 2017-11-06T21:44:50+00:00
+[INFO] Final Memory: 21M/210M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] junit
+Recording test results
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Integration test)
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[finanzas] Running shell script
++ mvn clean test -Dgroups=org.proundmega.pruebas.IntegrationTest
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Finanzas ---
+[INFO] Deleting /var/jenkins_home/workspace/finanzas/target
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ Finanzas ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /var/jenkins_home/workspace/finanzas/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/finanzas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/workspace/finanzas/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Finanzas ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.proundmega.finanzas.it.core.ClienteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.proundmega.finanzas.it.core.ClienteTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 24.660 s
+[INFO] Finished at: 2017-11-06T21:45:25+00:00
+[INFO] Final Memory: 21M/199M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] junit
+Recording test results
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Test all)
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[finanzas] Running shell script
++ mvn clean test
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Finanzas ---
+[INFO] Deleting /var/jenkins_home/workspace/finanzas/target
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ Finanzas ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /var/jenkins_home/workspace/finanzas/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/finanzas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/workspace/finanzas/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Finanzas ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.proundmega.finanzas.unit.core.AhorroTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in org.proundmega.finanzas.unit.core.AhorroTest
+Running org.proundmega.finanzas.it.core.ClienteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.proundmega.finanzas.it.core.ClienteTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.919 s
+[INFO] Finished at: 2017-11-06T21:45:57+00:00
+[INFO] Final Memory: 21M/212M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (SonarQube)
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withSonarQubeEnv
+Injecting SonarQube environment variables using the configuration: SonarServer
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[finanzas] Running shell script
++ mvn clean sonar:sonar
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Finanzas ---
+[INFO] Deleting /var/jenkins_home/workspace/finanzas/target
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.3.0.603:sonar (default-cli) @ Finanzas ---
+[INFO] User cache: /var/jenkins_home/.sonar/cache
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=1407ms
+[INFO] User cache: /var/jenkins_home/.sonar/cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=78ms
+[INFO] SonarQube version: 6.4.0
+[INFO] Default locale: "en", source code encoding: "UTF-8"
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=1414ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=311ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=6574ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=517ms
+[INFO] Publish mode
+[INFO] Project key: org.proundmega:Finanzas
+[INFO] -------------  Scan Finanzas
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=1101ms
+[INFO] Initializer GenericCoverageSensor
+[INFO] Initializer GenericCoverageSensor (done) | time=1ms
+[INFO] Base dir: /var/jenkins_home/workspace/finanzas
+[INFO] Working dir: /var/jenkins_home/workspace/finanzas/target/sonar
+[INFO] Source paths: src/main/webapp, pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: en
+[INFO] Index files
+[INFO] 11 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=89ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=12ms
+[INFO] Java Main Files AST scan
+[INFO] 3 source files to be analyzed
+[INFO] 3/3 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=4164ms
+[INFO] Java Test Files AST scan
+[INFO] 4 source files to be analyzed
+[INFO] 4/4 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=971ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=8634ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing /var/jenkins_home/workspace/finanzas/target/surefire-reports
+[INFO] Sensor SurefireSensor [java] (done) | time=8ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=3ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 3 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=2662ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 3/3 source files have been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=677ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=46ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=153ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=110ms
+[INFO] Calculating CPD for 3 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 404ms, dir size=51 KB
+[INFO] Analysis reports compressed in 86ms, zip size=25 KB
+[INFO] Analysis report uploaded in 396ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://sonarqube:9000/dashboard/index/org.proundmega:Finanzas
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://sonarqube:9000/api/ce/task?id=AV-TTPVUH0LFXghRJa5t
+[INFO] Task total time: 33.875 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 49.782 s
+[INFO] Finished at: 2017-11-06T21:46:56+00:00
+[INFO] Final Memory: 26M/319M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withSonarQubeEnv
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Release)
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[finanzas] Running shell script
++ mvn clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Finanzas ---
+[INFO] Deleting /var/jenkins_home/workspace/finanzas/target
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ Finanzas ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /var/jenkins_home/workspace/finanzas/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/finanzas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/workspace/finanzas/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Finanzas ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.proundmega.finanzas.unit.core.AhorroTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 sec - in org.proundmega.finanzas.unit.core.AhorroTest
+Running org.proundmega.finanzas.it.core.ClienteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.proundmega.finanzas.it.core.ClienteTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ Finanzas ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [Finanzas] in [/var/jenkins_home/workspace/finanzas/target/Finanzas-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/finanzas/src/main/webapp]
+[INFO] Webapp assembled in [349 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/finanzas/target/Finanzas-1.0.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ Finanzas ---
+[INFO] Installing /var/jenkins_home/workspace/finanzas/target/Finanzas-1.0.war to /var/jenkins_home/.m2/repository/org/proundmega/Finanzas/1.0/Finanzas-1.0.war
+[INFO] Installing /var/jenkins_home/workspace/finanzas/pom.xml to /var/jenkins_home/.m2/repository/org/proundmega/Finanzas/1.0/Finanzas-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31.838 s
+[INFO] Finished at: 2017-11-06T21:47:47+00:00
+[INFO] Final Memory: 24M/231M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] archive
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Deploy)
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[finanzas] Running shell script
++ cp target/Finanzas-1.0.war docker/javaee/finanzas.war
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/workspace/finanzas/docker
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[docker] Running shell script
++ bash deploy.sh
+Removing docker_javaee_1 ... 
+[1A[2KRemoving docker_javaee_1 ... done[1BRemoving network docker_default
+Building javaee
+Step 1/2 : FROM payara/server-full:latest
+ ---> 002f3499ba0c
+Step 2/2 : COPY finanzas.war $DEPLOY_DIR/finanzas.war
+ ---> 7e85f5893e51
+Successfully built 7e85f5893e51
+Successfully tagged docker_javaee:latest
+Creating network "docker_default" with the default driver
+Creating docker_javaee_1
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // dir
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4IOT45Ld4XrL1rAs+p01ktMeskwUcKrvKSi7PLTuRWdsAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

@@ -1,0 +1,16 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/proundmega/finanzas.git # timeout=10
+Fetching upstream changes from https://github.com/proundmega/finanzas.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/proundmega/finanzas.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision dd4913177ad788a5ecfb7ba40733c110aee9f0f4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dd4913177ad788a5ecfb7ba40733c110aee9f0f4
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master dd4913177ad788a5ecfb7ba40733c110aee9f0f4
+Commit message: "Coverage 1.1"
+ > git rev-list 24bad4d0654d9a6fa600628335ab4bede423a695 # timeout=10

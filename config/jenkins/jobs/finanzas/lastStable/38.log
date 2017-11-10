@@ -1,0 +1,62 @@
+[finanzas] Running shell script
++ mvn clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Finanzas 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Finanzas ---
+[INFO] Deleting /var/jenkins_home/workspace/finanzas/target
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.6:copy (default) @ Finanzas ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /var/jenkins_home/workspace/finanzas/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Finanzas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/finanzas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Finanzas ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/workspace/finanzas/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ Finanzas ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.proundmega.finanzas.unit.core.AhorroTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 sec - in org.proundmega.finanzas.unit.core.AhorroTest
+Running org.proundmega.finanzas.it.core.ClienteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.proundmega.finanzas.it.core.ClienteTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ Finanzas ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [Finanzas] in [/var/jenkins_home/workspace/finanzas/target/Finanzas-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/finanzas/src/main/webapp]
+[INFO] Webapp assembled in [349 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/finanzas/target/Finanzas-1.0.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ Finanzas ---
+[INFO] Installing /var/jenkins_home/workspace/finanzas/target/Finanzas-1.0.war to /var/jenkins_home/.m2/repository/org/proundmega/Finanzas/1.0/Finanzas-1.0.war
+[INFO] Installing /var/jenkins_home/workspace/finanzas/pom.xml to /var/jenkins_home/.m2/repository/org/proundmega/Finanzas/1.0/Finanzas-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31.838 s
+[INFO] Finished at: 2017-11-06T21:47:47+00:00
+[INFO] Final Memory: 24M/231M
+[INFO] ------------------------------------------------------------------------
